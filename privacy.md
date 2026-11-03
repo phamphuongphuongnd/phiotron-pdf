@@ -8,7 +8,7 @@ title: Chính sách bảo mật · Privacy Policy
 
 **Ngày hiệu lực:** 03/11/2026
 
-Chính sách này giải thích ứng dụng **Phiotron PDF** (Android: `com.phuong.pdfoffice`, iOS) xử lý dữ liệu của bạn
+Chính sách này giải thích ứng dụng **Phiotron PDF** (Android: `com.phiotron.phiotronpdf`, iOS) xử lý dữ liệu của bạn
 như thế nào. Ứng dụng do cá nhân **Phạm Phương (Phiotron)** phát triển ("chúng tôi"). Liên hệ:
 [phamphuongphuongnd@gmail.com](mailto:phamphuongphuongnd@gmail.com).
 
@@ -139,7 +139,7 @@ Phạm Phương (Phiotron) — [phamphuongphuongnd@gmail.com](mailto:phamphuongp
 
 **Effective date:** 3 November 2026
 
-This policy explains how the **Phiotron PDF** app (Android: `com.phuong.pdfoffice`, iOS) handles your data. The app
+This policy explains how the **Phiotron PDF** app (Android: `com.phiotron.phiotronpdf`, iOS) handles your data. The app
 is developed by an individual, **Phạm Phương (Phiotron)** ("we"). Contact:
 [phamphuongphuongnd@gmail.com](mailto:phamphuongphuongnd@gmail.com).
 
