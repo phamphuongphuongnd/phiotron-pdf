@@ -45,7 +45,8 @@ bấm "Chia sẻ" để gửi tệp qua ứng dụng khác — khi đó chính s
 - **Ảnh** — chọn qua **trình chọn ảnh của hệ thống** (Android Photo Picker / iOS PHPicker). Ứng dụng chỉ nhận
   những ảnh bạn chọn, không đọc cả thư viện ảnh.
 - **Tệp** — Android: ứng dụng xin quyền bộ nhớ (Android 7–10) hoặc **"Truy cập tất cả file"** (Android 11 trở lên)
-  để tìm, liệt kê và mở tài liệu trên máy, và lưu vào `Documents/Phiotron PDF`. Tệp chỉ được đọc trên thiết bị,
+  để tìm, liệt kê và mở tài liệu trên máy, và lưu vào `Documents/Phiotron PDF`. Bộ quét chỉ tìm tệp tài liệu (PDF, Word,
+  Excel, PowerPoint, TXT). Tệp chỉ được đọc trên thiết bị,
   không bao giờ được tải lên. iOS: chỉ những tệp bạn chọn hoặc mở bằng ứng dụng.
 - **Sinh trắc học / mã PIN của máy** (Khoá ứng dụng, tuỳ chọn) — việc xác thực do hệ điều hành thực hiện
   (Android BiometricPrompt / iOS Face ID, Touch ID). Ứng dụng chỉ nhận kết quả "thành công / thất bại", **không
@@ -71,7 +72,7 @@ ML Kit có thể thu thập và gửi cho Google, nhằm **chẩn đoán và th�
 - Số đo hiệu năng (ví dụ độ trễ), cấu hình API (ví dụ định dạng và độ phân giải ảnh), kích thước đầu vào / đầu ra,
   phiên bản tính năng, loại sự kiện (khởi tạo, tải model, nhận dạng, giải phóng tài nguyên) và mã lỗi;
 - Với tính năng Dịch: cặp ngôn ngữ nguồn / đích đã cấu hình; Dịch cũng dùng Firebase Remote Config và
-  Firebase Installations.
+  Firebase Installations (Remote Config nhận thêm mã quốc gia, ngôn ngữ, múi giờ và phiên bản hệ điều hành của máy).
 
 Google cho biết dữ liệu này được **mã hoá khi truyền (HTTPS)** và **không được chuyển cho bên thứ ba**. Chúng tôi
 không nhận được dữ liệu này. Việc Google xử lý dữ liệu tuân theo
@@ -175,7 +176,8 @@ None of the data above is sent to us or to anyone else, unless **you** share a f
 - **Photos** — chosen through the **system photo picker** (Android Photo Picker / iOS PHPicker). The app only
   receives the photos you pick and never reads your whole library.
 - **Files** — Android: the app asks for storage access (Android 7–10) or **"All files access"** (Android 11 and
-  later) to find, list and open documents on the device, and to save into `Documents/Phiotron PDF`. Files are only
+  later) to find, list and open documents on the device, and to save into `Documents/Phiotron PDF`. The scan only
+  looks for document files (PDF, Word, Excel, PowerPoint, TXT). Files are only
   read on the device and are never uploaded. If you decline, you can still pick files one by one. iOS: only the
   files you choose or open with the app.
 - **Biometrics / device PIN** (optional App lock) — the check is done by the operating system (Android
@@ -202,7 +204,7 @@ ML Kit may collect and send to Google, for **diagnostics and usage analytics**:
 - Performance metrics (e.g. latency), API configuration (e.g. image format and resolution), input / output sizes,
   feature version, event types (initialisation, model download, detection, resource release) and error codes;
 - For Translation: the configured source and target languages; Translation also uses Firebase Remote Config and
-  Firebase Installations.
+  Firebase Installations (Remote Config also receives the device's country code, language, time zone and OS version).
 
 Google states that this data is **encrypted in transit (HTTPS)** and **not transferred to third parties**. We do not
 receive this data. Google's processing is governed by the
