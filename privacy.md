@@ -16,9 +16,10 @@ như thế nào. Ứng dụng do cá nhân **Phạm Phương (Phiotron)** phát 
 
 - Ứng dụng **miễn phí**: không quảng cáo, không mua trong ứng dụng, không tài khoản, không đăng nhập.
 - **Không có** công cụ phân tích (analytics), không có báo cáo lỗi tự động (crash reporting), không theo dõi
-  quảng cáo. Chúng tôi **không vận hành máy chủ nào** và **không thu thập, không bán, không chia sẻ** dữ liệu của bạn.
+  quảng cáo. Chúng tôi **không vận hành máy chủ nào**, **không nhận, không bán, không chia sẻ** dữ liệu của bạn.
 - Tệp PDF, Office và ảnh của bạn được **xử lý ngay trên thiết bị** và **không bao giờ bị tải lên**.
-- Ứng dụng chỉ dùng Internet để **tải gói ngôn ngữ dịch từ Google khi bạn chọn tải**.
+- Ứng dụng dùng Internet để **tải gói ngôn ngữ dịch từ Google khi bạn chọn tải**, và để các thành phần Google ML Kit
+  gửi dữ liệu chẩn đoán cho Google (mục 4).
 - Một số thành phần của Google (Google ML Kit) có thể gửi **dữ liệu chẩn đoán và thống kê sử dụng** cho Google
   (xem mục 4). Dữ liệu này không chứa nội dung tệp hay chữ của bạn.
 
@@ -49,7 +50,8 @@ bấm "Chia sẻ" để gửi tệp qua ứng dụng khác — khi đó chính s
 - **Sinh trắc học / mã PIN của máy** (Khoá ứng dụng, tuỳ chọn) — việc xác thực do hệ điều hành thực hiện
   (Android BiometricPrompt / iOS Face ID, Touch ID). Ứng dụng chỉ nhận kết quả "thành công / thất bại", **không
   bao giờ nhận dữ liệu vân tay hay khuôn mặt**.
-- **Internet** — chỉ để tải gói ngôn ngữ dịch từ Google khi bạn chọn tải (xem mục 4).
+- **Internet** — để tải gói ngôn ngữ dịch từ Google khi bạn chọn tải, và để Google ML Kit gửi dữ liệu chẩn đoán,
+  thống kê sử dụng cho Google (xem mục 4). Tệp và chữ của bạn không bao giờ được gửi đi.
 
 ## 4. Thành phần của bên thứ ba
 
@@ -101,7 +103,7 @@ nhận được địa chỉ email và nội dung bạn viết; chúng tôi ch�
 ## 5. Trẻ em
 
 Ứng dụng là công cụ văn phòng dành cho mọi người, **không hướng tới trẻ em dưới 13 tuổi**. Chúng tôi không cố ý thu
-thập dữ liệu cá nhân của trẻ em (thực tế ứng dụng không thu thập dữ liệu cá nhân của ai). Nếu bạn cho rằng một trẻ
+thập dữ liệu cá nhân của trẻ em (chúng tôi không nhận dữ liệu cá nhân của ai; xem mục 4 về dữ liệu chẩn đoán Google ML Kit thu). Nếu bạn cho rằng một trẻ
 em đã gửi thông tin cho chúng tôi qua email, hãy liên hệ để chúng tôi xoá.
 
 ## 6. Lưu giữ và xoá dữ liệu
@@ -144,9 +146,10 @@ is developed by an individual, **Phạm Phương (Phiotron)** ("we"). Contact:
 
 - The app is **free**: no ads, no in-app purchases, no account, no sign-in.
 - There is **no** analytics, **no** automatic crash reporting and **no** ad tracking. We **run no servers** and we
-  **do not collect, sell or share** your data.
+  **do not receive, sell or share** your data.
 - Your PDF, Office files and images are **processed on your device** and **never uploaded**.
-- The app uses the Internet **only to download translation language packs from Google when you choose to**.
+- The app uses the Internet **to download translation language packs from Google when you choose to**, and so that
+  Google ML Kit components can send diagnostic data to Google (section 4).
 - Some Google components (Google ML Kit) may send **diagnostic and usage data** to Google (see section 4). This
   data does not include the content of your files or text.
 
@@ -178,7 +181,8 @@ None of the data above is sent to us or to anyone else, unless **you** share a f
 - **Biometrics / device PIN** (optional App lock) — the check is done by the operating system (Android
   BiometricPrompt / iOS Face ID, Touch ID). The app only receives "success / failure" and **never receives
   fingerprint or face data**.
-- **Internet** — only to download translation language packs from Google when you choose to (see section 4).
+- **Internet** — to download translation language packs from Google when you choose to, and for Google ML Kit to
+  send diagnostic and usage data to Google (see section 4). Your files and text are never sent.
 
 ## 4. Third-party components
 
@@ -230,7 +234,7 @@ email address and what you wrote; we use them only to reply to you.
 ## 5. Children
 
 The app is a general productivity tool and is **not directed to children under 13**. We do not knowingly collect
-personal data from children (in fact the app collects no personal data from anyone). If you believe a child has sent
+personal data from children (we receive no personal data from anyone; see section 4 for the diagnostic data Google ML Kit collects). If you believe a child has sent
 us information by email, contact us and we will delete it.
 
 ## 6. Data retention and deletion
